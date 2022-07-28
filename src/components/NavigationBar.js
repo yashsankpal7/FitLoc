@@ -45,22 +45,22 @@ const NavigationBar = () =>{
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/about">
+              <Nav.Link href="/FitLoc/about">
                 About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href='/contact'>
+              <Nav.Link href="/FitLoc/contact">
                 Contact
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/signup">
+              <Nav.Link href="/FitLoc/signup">
                 SignUp
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/login">
+              <Nav.Link href="/FitLoc/login">
                 Login
               </Nav.Link>
             </Nav.Item>
