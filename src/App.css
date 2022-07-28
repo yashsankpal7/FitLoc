@@ -33,9 +33,10 @@
 }
 
 .Contact{
-  background-image: url('./assets/contactVid.gif');
-  height: 100vh;
+  background-image: url('./assets/contact.jpg');
+  height: 105vh;
   background-size:cover;
+  background-repeat: no-repeat;
   overflow:auto
 }
 
@@ -47,7 +48,7 @@
 }
 
 .About{
-  background-image: url('./assets/cycle.jpg');
+  background-image: url('./assets/group.jpg');
   height: 100vh;
   background-size:contain;
   overflow:auto
