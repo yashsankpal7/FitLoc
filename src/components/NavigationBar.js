@@ -35,10 +35,10 @@ const NavigationBar = () =>{
           >
           <span className="navbar-toggler-icon"/>
         </Button>
-        <Navbar.Brand href="/home" className="ms-1">FitLoc</Navbar.Brand>
+        <Navbar.Brand href="/home" className="ms-1 fs-5">FitLoc</Navbar.Brand>
         <Navbar.Toggle aria-controls="justify-content-end"/>
         <Navbar.Collapse className="justify-content-end">
-          <Nav className="me-0">
+          <Nav className="me-0 fs-5">
             <Nav.Item>
               <Nav.Link >
                 <Link to="/" className="text-decoration-none text-white">

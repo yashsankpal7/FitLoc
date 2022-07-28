@@ -31,3 +31,83 @@
     transform: rotate(360deg);
   }
 }
+
+.Contact{
+  background-image: url('./assets/contactVid\ \(1\).gif');
+  height: 100vh;
+  background-size:cover;
+  overflow:auto
+}
+
+.NoMatch{
+  background-image: url('./assets/error.jpg');
+  height: 100vh;
+  background-size:cover;
+  overflow:auto
+}
+
+.About{
+  background-image: url('./assets/hold.gif');
+  height: 100vh;
+  background-size:cover;
+  overflow:auto
+}
+
+.Contact-Card{
+
+  margin-top: 5rem;
+}
+
+.NoMatch-Card{
+
+  margin-top: 5rem;
+}
+
+
+.About-Table{
+  margin-left: 3.5rem;
+  width:80rem !important;
+  height:90vh;
+  overflow-y: hidden;
+  margin-top: 2.4rem;
+  border:1px solid black !important;
+  backdrop-filter:blur(2px);
+  background-image: linear-gradient(to bottom right, rgba(0,0,0, 1), rgba(146, 154, 171, .5));
+}
+
+td{
+  border:1px solid black !important;
+  color: #363434;
+}
+.About::-webkit-scrollbar{
+  display:none;
+}
+
+.About-Text:hover{
+  text-shadow: 5px 5px 3px rgba(82, 82, 82, 1) !important;
+  font-size: 5rem !important;
+  transition: .8s ease-in;
+  color: rgba(229, 223, 223, 1)  !important;
+  background-color: rgba(104, 109, 118, 1)!important;
+  box-shadow:0rem 0rem 1px black !important;
+}
+
+.About-Text{
+  transition: .8s ease-out;
+}
+
+.modal-content{
+  border: none !important;
+} 
+.About-Card{
+  border: none;
+  width: 40rem;
+}
+
+.Login{
+
+}
+
+.SignUp{
+  
+}

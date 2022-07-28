@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import { NoMatch } from './pages/NoMatch';
+import NoMatch from './pages/NoMatch';
 import Layout from './components/Layout';
 import NavigationBar from './components/NavigationBar';
 import Login from './pages/login';
