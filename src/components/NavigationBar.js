@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Container, Button ,Collapse} from 'react-bootstrap';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Tabss from './Tabs_';
 
 const Styles = styled.div`
   .navbar {
@@ -10,37 +12,65 @@ const Styles = styled.div`
 
   a, .navbar-brand, .navbar-nav .nav-link {
     color: #bbb;
-
+    
     &:hover {
       color: white;
     }
   }
-`;
+  `;
 
-export const NavigationBar = () => (
-  <Styles>
-    <Navbar expand="lg">
-      <Navbar.Brand href="/">Code Life</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/">Home</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/about">About</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/contact">Contact</Link>
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
+const NavigationBar = () =>{
+
+  const [open, setOpen] = useState(false);
+  return(
+    <>
+    <Navbar  collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
+      <Container fluid> 
+        <Button
+          onClick={() => setOpen(!open)}
+          aria-controls="example-fade-text"
+          aria-expanded={open}
+          className="bg-dark btn-outline-dark"
+          type="button"
+          >
+          <span className="navbar-toggler-icon"/>
+        </Button>
+        <Navbar.Brand href="/home" className="ms-1">FitLoc</Navbar.Brand>
+        <Navbar.Toggle aria-controls="justify-content-end"/>
+        <Navbar.Collapse className="justify-content-end">
+          <Nav className="me-0">
+            <Nav.Item>
+              <Nav.Link href="/">
+                  Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/about">
+                About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href='/contact'>
+                Contact
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/signup">
+                SignUp
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/login">
+                Login
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
-  </Styles >
+    <Tabss open={open}/>
+    </>
 )
+} 
+
+export default NavigationBar

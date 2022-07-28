@@ -1,8 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-export const Layout = (props) => (
-  <Container>
-    {props.children}
-  </Container>
-)
+const Layout = (props) =>{ 
+  
+  return(
+    <>
+      {/* <Container fluid> */}
+        {props.children}
+      {/* </Container> */}
+    </>
+)}
+
+export default Layout

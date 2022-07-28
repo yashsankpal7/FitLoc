@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import boatImage from '../assets/boatImage.jpg';
 
@@ -24,6 +24,40 @@ const Styles = styled.div`
     z-index: -1;
   }
 `;
+
+const Jumbo = styled.div`
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+.container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+}
+
+.jumbotron {
+  background-color: #eee;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+`
 
 export const Jumbotron = () => (
   <Styles>
