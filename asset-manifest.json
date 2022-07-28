@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FitLoc/static/css/main.8061a084.css",
+    "main.js": "/FitLoc/static/js/main.c9c837ca.js",
+    "static/media/women.jpg": "/FitLoc/static/media/women.294435737a01e6dc51dd.jpg",
+    "static/media/contactUs.jpg": "/FitLoc/static/media/contactUs.13f8ecbfda149ba22f6a.jpg",
+    "static/media/victor-freitas-WvDYdXDzkhs-unsplash.jpg": "/FitLoc/static/media/victor-freitas-WvDYdXDzkhs-unsplash.fd9f7452af71250139f9.jpg",
+    "static/media/men.jpg": "/FitLoc/static/media/men.9fa711764ddb76e86fb6.jpg",
+    "static/media/anastase-maragos-HyvE5SiKMUs-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-HyvE5SiKMUs-unsplash.08937771466e9dfb5914.jpg",
+    "static/media/dumbells.jpg": "/FitLoc/static/media/dumbells.eb98fc43cd1fb6f87b7e.jpg",
+    "static/media/mor-shani-li4dxZ0KYRw-unsplash.jpg": "/FitLoc/static/media/mor-shani-li4dxZ0KYRw-unsplash.ce645a48a19cae4e609d.jpg",
+    "static/media/run.jpg": "/FitLoc/static/media/run.a4ec21b997c9bb27b17a.jpg",
+    "static/media/anastase-maragos-FP7cfYPPUKM-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-FP7cfYPPUKM-unsplash.cc301a83ecea6ddf06b4.jpg",
+    "index.html": "/FitLoc/index.html",
+    "main.8061a084.css.map": "/FitLoc/static/css/main.8061a084.css.map",
+    "main.c9c837ca.js.map": "/FitLoc/static/js/main.c9c837ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8061a084.css",
+    "static/js/main.c9c837ca.js"
+  ]
+}
