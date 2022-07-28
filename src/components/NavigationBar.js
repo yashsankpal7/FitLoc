@@ -40,28 +40,38 @@ const NavigationBar = () =>{
         <Navbar.Collapse className="justify-content-end">
           <Nav className="me-0">
             <Nav.Item>
-              <Nav.Link href="/">
+              <Nav.Link >
+                <Link to="/" className="text-decoration-none text-white">
                   Home
+                </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/FitLoc/about">
-                About
+              <Nav.Link >
+                <Link to="/about" className="text-decoration-none text-white">
+                  About
+                </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/FitLoc/contact">
-                Contact
+              <Nav.Link >
+                <Link to="/contact" className="text-decoration-none text-white">
+                  Contact
+                </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/FitLoc/signup">
-                SignUp
+              <Nav.Link >
+                <Link to="/signup" className="text-decoration-none text-white">
+                  SignUp
+                </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/FitLoc/login">
-                Login
+              <Nav.Link>
+                <Link to="/login" className="text-decoration-none text-white">
+                  Login
+                </Link>
               </Nav.Link>
             </Nav.Item>
           </Nav>
