@@ -33,7 +33,7 @@
 }
 
 .Contact{
-  background-image: url('./assets/contactVid\ \(1\).gif');
+  background-image: url('./assets/contactVid.gif');
   height: 100vh;
   background-size:cover;
   overflow:auto
@@ -47,9 +47,9 @@
 }
 
 .About{
-  background-image: url('./assets/hold.gif');
+  background-image: url('./assets/cycle.jpg');
   height: 100vh;
-  background-size:cover;
+  background-size:contain;
   overflow:auto
 }
 
@@ -67,7 +67,7 @@
 .About-Table{
   margin-left: 3.5rem;
   width:80rem !important;
-  height:90vh;
+  height:88vh;
   overflow-y: hidden;
   margin-top: 2.4rem;
   border:1px solid black !important;
