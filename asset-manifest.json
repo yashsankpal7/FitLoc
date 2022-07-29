@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/FitLoc/static/css/main.8061a084.css",
-    "main.js": "/FitLoc/static/js/main.f5953c77.js",
+    "main.css": "/FitLoc/static/css/main.a39e2c20.css",
+    "main.js": "/FitLoc/static/js/main.dbd1a23c.js",
+    "static/media/error.jpg": "/FitLoc/static/media/error.4cced44502c85d8ed35e.jpg",
+    "static/media/human1.jpg": "/FitLoc/static/media/human1.f74e8495c4d26191c4c9.jpg",
     "static/media/women.jpg": "/FitLoc/static/media/women.294435737a01e6dc51dd.jpg",
-    "static/media/contactUs.jpg": "/FitLoc/static/media/contactUs.13f8ecbfda149ba22f6a.jpg",
     "static/media/victor-freitas-WvDYdXDzkhs-unsplash.jpg": "/FitLoc/static/media/victor-freitas-WvDYdXDzkhs-unsplash.fd9f7452af71250139f9.jpg",
     "static/media/men.jpg": "/FitLoc/static/media/men.9fa711764ddb76e86fb6.jpg",
     "static/media/anastase-maragos-HyvE5SiKMUs-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-HyvE5SiKMUs-unsplash.08937771466e9dfb5914.jpg",
     "static/media/dumbells.jpg": "/FitLoc/static/media/dumbells.eb98fc43cd1fb6f87b7e.jpg",
+    "static/media/group.jpg": "/FitLoc/static/media/group.3a48ef8bdd6d10de9fa6.jpg",
     "static/media/mor-shani-li4dxZ0KYRw-unsplash.jpg": "/FitLoc/static/media/mor-shani-li4dxZ0KYRw-unsplash.ce645a48a19cae4e609d.jpg",
+    "static/media/contact.jpg": "/FitLoc/static/media/contact.1287ccea2734d740744a.jpg",
     "static/media/run.jpg": "/FitLoc/static/media/run.a4ec21b997c9bb27b17a.jpg",
     "static/media/anastase-maragos-FP7cfYPPUKM-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-FP7cfYPPUKM-unsplash.cc301a83ecea6ddf06b4.jpg",
     "index.html": "/FitLoc/index.html",
-    "main.8061a084.css.map": "/FitLoc/static/css/main.8061a084.css.map",
-    "main.f5953c77.js.map": "/FitLoc/static/js/main.f5953c77.js.map"
+    "main.a39e2c20.css.map": "/FitLoc/static/css/main.a39e2c20.css.map",
+    "main.dbd1a23c.js.map": "/FitLoc/static/js/main.dbd1a23c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8061a084.css",
-    "static/js/main.f5953c77.js"
+    "static/css/main.a39e2c20.css",
+    "static/js/main.dbd1a23c.js"
   ]
 }
