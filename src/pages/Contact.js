@@ -11,45 +11,6 @@ const Contact = () => {
     <>
       <div className="Contact">
         <Card className="p-3 Contact-Card" text='light' style={{backdropFilter:`blur(5px)`,backgroundColor: `rgba(0,0,0,.5)`,width:'75%',marginLeft:'10rem'}}>
-          <Row>
-            <Col className="col-md-8">
-              <Container fluid >
-                <h3 className="py-2">
-                  Support
-                </h3>
-                <Row className="g-2" md={2} xs={1}>
-                  <Col>
-                    <Card bg={'secondary'} style={{height:'10rem'}}>
-                      <Card.Body className="position-absolute top-50 start-50 translate-middle">
-                        <Card.Title>Stores</Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg={'secondary'} style={{height:'10rem'}}>
-                      <Card.Body className="position-absolute top-50 start-50 translate-middle">
-                        <Card.Title>Delivery</Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg={'secondary'} style={{height:'10rem'}}>
-                      <Card.Body className="position-absolute top-50 start-50 translate-middle">
-                        <Card.Title>Product</Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col>
-                    <Card bg={'secondary'} style={{height:'10rem'}}>
-                      <Card.Body className="position-absolute top-50 start-50 translate-middle">
-                        <Card.Title className="d-inline-block">More to Come...</Card.Title>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
-              </Container>
-            </Col>
-            <Col className="col-md-4">
               <Container fluid c>
                 <h3 className="py-2">
                     Contact Us
@@ -58,9 +19,23 @@ const Contact = () => {
                   <Card.Body>
                     {/* <ListGroup variant="flush" className="bg-dark"> */}
                     <Row className="mt-2">
-                      <Form.Group controlId="exampleForm.ControlInput1">
+                      <Form.Group as={Col} controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
+                      </Form.Group>
+                      <Form.Group as={Col} controlId="exampleForm.ControlInput1">
+                        <Form.Label>Related Topic</Form.Label>
+                        <Form.Select>
+                          <option value="0">Corporate</option>
+                          <option value="1">Membership</option>
+                          <option value="2">Online Order</option>
+                          <option value="3">Product</option>
+                          <option value="4">Returns</option>
+                          <option value="5">Stores</option>
+                          <option value="6">Delivery</option>
+                          <option value="7">Corporate</option>
+                          <option value="8">Workshop</option>
+                        </Form.Select>
                       </Form.Group>
                     </Row>
                     <Row className="mt-2">
@@ -76,8 +51,6 @@ const Contact = () => {
                   </Card.Body>
                 </Card>
               </Container>
-            </Col>
-          </Row>
         </Card>
       </div>
     </>

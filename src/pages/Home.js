@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container, Stack, Carousel, Image, Card, ButtonGroup ,Button,Row,Col} from 'react-bootstrap';
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
 
-  
+  const navigate = useNavigate();
   return (
     <>
     <Stack>
       <Carousel_/>
-      <Trends/>
+      <Trends navigate={navigate}/>
       <Offers/>
     </Stack>
   </>
@@ -107,7 +107,7 @@ const Carousel_ = ()=>{
   )
 }
 
-const Trends = ()=>{
+const Trends = ({navigate})=>{
   return (
     <>
       <Container className="pt-5 pb-5" fluid>
@@ -123,8 +123,9 @@ const Trends = ()=>{
               <Card.Title>Run</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
-              <Button variant="dark" className="text-white">Price</Button>
-              <Button variant="dark" className="text-white">Explore</Button>
+              <Button variant="dark" onClick={()=>navigate("/products/run")} className="text-white">
+                Explore
+              </Button>
             </Card.Body>
           </Card>
           </Col>
@@ -135,8 +136,9 @@ const Trends = ()=>{
               <Card.Title>Men</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
-              <Button variant="dark" className="text-white">Price</Button>
-              <Button variant="dark" className="text-white">Explore</Button>
+              <Button variant="dark" onClick={()=>navigate("/products/men")} className="text-white">
+                Explore
+              </Button>
             </Card.Body>
           </Card>
           </Col>
@@ -147,8 +149,9 @@ const Trends = ()=>{
               <Card.Title>Women</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
-              <Button variant="dark" className="text-white">Price</Button>
-              <Button variant="dark" className="text-white">Explore</Button>
+              <Button variant="dark" onClick={()=>navigate("/products/women")} className="text-white">
+                Explore
+              </Button>
             </Card.Body>
           </Card>
           </Col>
@@ -159,8 +162,9 @@ const Trends = ()=>{
               <Card.Title>Accessories</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
-              <Button variant="dark" className="text-white">Price</Button>
-              <Button variant="dark" className="text-white">Explore</Button>
+              <Button variant="dark" onClick={()=>navigate("/products/accessories")} className="text-white">
+                Explore
+              </Button>
             </Card.Body>
           </Card>
           </Col>

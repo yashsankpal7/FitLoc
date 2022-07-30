@@ -9,6 +9,7 @@ import NavigationBar from './components/NavigationBar';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import Footer from './components/Footer';
+import Products from './pages/Products';
 
 const App = ()=>{
   return (
@@ -21,6 +22,7 @@ const App = ()=>{
           <Route path="/contact"  element={<Contact/>} />
           <Route path="/login"  element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
+          <Route path="/products/:type" element={<Products/>}/>
           <Route path="*" element={<NoMatch/>} />
         </Routes>
       </Layout>

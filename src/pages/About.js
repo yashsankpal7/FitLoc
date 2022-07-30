@@ -1,118 +1,109 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { Container, Table, Modal, Button, Card, Row ,Col} from 'react-bootstrap';
+import { faker } from "@faker-js/faker";
+import _ from "lodash";
 
 const About = () => {
   const [show, setShow] = useState(false);
+  const [peopleData,setPeopleData] = useState(0)
+  const [status,setStatus] = useState({firstName:"",lastName:"",description:"",image:""})
+
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (firstName,lastName,description,image) => {
+
+    console.log(firstName);
+    console.log(lastName);
+    console.log(description);
+    setShow(true);
+    setStatus({
+      firstName:`${firstName}`,
+      lastName:`${lastName}`,
+      description:`${description}`,
+      image:`${image}`
+    })
+  }
+
+  useEffect(() => {
+    
+    const data = async () =>{
+      let data =  await new Array(18).fill().map((e,i)=>{
+        return {
+          firstName:faker.name.firstName(),
+          lastName:faker.name.lastName(),
+          description:faker.lorem.lines(),
+          image:faker.image.avatar(true)
+        }
+      })
+  
+      setPeopleData(data)
+    }
+
+    if(peopleData === 0) data()
+    console.log(status);
+  }, [peopleData])
+  
   return(
     <>
       <div className="About">
         <div className="text-light text-center display-4"> <span className="text-primary display-2">#United</span> we Stand. </div>
         <Table bordered className="About-Table" responsive="md"> 
           <tbody>
-            <tr className="About-Row ">
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Outdoor</h4>
-                <h5 className="text-center">Sports</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Steve </h4> <h5 className="text-center"> Rogers</h5>
-              </td>
-                <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Mark </h4> <h5 className="text-center"> Spencer</h5>
-              </td>
-                <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom</h4> <h5 className="text-center"> Hiddleston</h5>
-              </td>
-                <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom </h4> <h5 className="text-center">Holland</h5>
-              </td>
-                <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Natasha</h4> <h5 className="text-center"> Romanoff</h5>
-              </td>
-                <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Marco</h4> <h5 className="text-center"> Polo</h5>
-              </td>
-            </tr>
-            <tr className="About-Row">
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Marco</h4> <h5 className="text-center"> Polo</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Running &</h4>
-                <h5 className="text-center">Walking</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Natasha</h4> <h5 className="text-center"> Romanoff</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom </h4> <h5 className="text-center">Holland</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom</h4> <h5 className="text-center"> Hiddleston</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Mark </h4> <h5 className="text-center"> Spencer</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Steve </h4> <h5 className="text-center"> Rogers</h5>
-              </td>
-            </tr>
-            <tr className="About-Row">
-                <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Mark </h4> <h5 className="text-center"> Spencer</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Steve </h4> <h5 className="text-center"> Rogers</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Fitness</h4>
-                <h5 className="text-center">Sports</h5>
-              </td>
 
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom </h4> <h5 className="text-center">Holland</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Natasha</h4> <h5 className="text-center"> Romanoff</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom</h4> <h5 className="text-center"> Hiddleston</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Marco</h4> <h5 className="text-center"> Polo</h5>
-              </td>
-            </tr>
-            <tr className="About-Row">
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Natasha</h4> <h5 className="text-center"> Romanoff</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Marco</h4> <h5 className="text-center"> Polo</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom </h4> <h5 className="text-center">Holland</h5>
-              </td>
+            {
+              peopleData === 0 ? 
+              <> Loading</>
+              :
+              <>
+                <tr className="About-Row "> 
+                  {
+                    _.times(6,(j)=>(
+                      <>
+                        <Person 
+                          handleShow={handleShow} 
+                          firstName={peopleData[j].firstName} 
+                          lastName={peopleData[j].lastName} 
+                          description={peopleData[j].description} 
+                          image={peopleData[j].image}/>
+                      </>
+                    ))
+                  }
+                </tr>
+                <tr className="About-Row "> 
+                  {
+                    _.times(6,(j)=>(
+                      <>
+                        <Person 
+                          handleShow={handleShow} 
+                          firstName={peopleData[j+6].firstName} 
+                          lastName={peopleData[j+6].lastName} 
+                          description={peopleData[j+6].description} 
+                          image={peopleData[j+6].image}/>
+                      </>
+                    ))
+                  }
+                </tr>
+                <tr className="About-Row "> 
+                  {
+                    _.times(6,(j)=>(
+                      <>
+                        <Person 
+                          handleShow={handleShow} 
+                          firstName={peopleData[j+12].firstName} 
+                          lastName={peopleData[j+12].lastName} 
+                          description={peopleData[j+12].description} 
+                          image={peopleData[j+12].image}/>
+                      </>
+                    ))
+                  }
+                </tr>
+              </>
+            }
 
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Team</h4>
-                <h5 className="text-center">Sports</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Steve </h4> <h5 className="text-center"> Rogers</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Mark </h4> <h5 className="text-center"> Spencer</h5>
-              </td>
-              <td className='align-middle text-light About-Text' onClick={handleShow}>
-                <h4 className="text-center">Tom</h4> <h5 className="text-center"> Hiddleston</h5>
-              </td>
-            </tr>
+
           </tbody>
         </Table>
-        <Modal_ show={show} onHide={handleClose} />
+        <Modal_ show={show} onHide={handleClose} firstName={status.firstName} lastName={status.lastName} description={status.description} image={status.image}/>
       </div>
     </>
   )
@@ -120,7 +111,7 @@ const About = () => {
 
 export default About
 
-const Modal_ = ({show,onHide})=>{
+const Modal_ = ({show,onHide,firstName,lastName,description,image})=>{
   return(
     <>
       <Modal
@@ -132,13 +123,13 @@ const Modal_ = ({show,onHide})=>{
         <Card bg="dark" text="light" className="About-Card">
           <Row>
             <Col className="col-md-7">
-              <Card.Img variant="top" src={require('../assets/human1.jpg')} style={{height:'25rem'}} />
+              <Card.Img variant="top" src={image} style={{height:'25rem'}} />
             </Col>
             <Col>
               <Card.Body>
-                <Card.Title className="display-6"> Marco Polo</Card.Title>
+                <Card.Title className="display-6"> {firstName} {lastName}</Card.Title>
                 <Card.Text className="mt-3">
-                "It was a cold grey day in late November. The weather had changed overnight, when a backing wind brought a granite sky and a mizzling rain with it, and although it was now only a little after two o'clock in the afternoon the pallor of a winter evening seemed to have closed upon the hills, cloaking them in mist."
+                  {description}
                 </Card.Text>
               </Card.Body>
             </Col>
@@ -148,6 +139,18 @@ const Modal_ = ({show,onHide})=>{
 
 
     </Modal>
+    </>
+  )
+}
+
+const Person = ({handleShow,firstName,lastName,description,image})=>{
+  
+  return (
+    <>
+      <td className='align-middle text-light About-Text' onClick={()=>handleShow(firstName,lastName,description,image)}>
+        <h4 className="text-center">{firstName}</h4>
+        <h5 className="text-center">{lastName}</h5>
+      </td>
     </>
   )
 }
