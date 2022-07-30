@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/FitLoc/static/css/main.a39e2c20.css",
-    "main.js": "/FitLoc/static/js/main.dbd1a23c.js",
+    "main.css": "/FitLoc/static/css/main.9268e6b1.css",
+    "main.js": "/FitLoc/static/js/main.ea995269.js",
     "static/media/error.jpg": "/FitLoc/static/media/error.4cced44502c85d8ed35e.jpg",
-    "static/media/human1.jpg": "/FitLoc/static/media/human1.f74e8495c4d26191c4c9.jpg",
     "static/media/women.jpg": "/FitLoc/static/media/women.294435737a01e6dc51dd.jpg",
     "static/media/victor-freitas-WvDYdXDzkhs-unsplash.jpg": "/FitLoc/static/media/victor-freitas-WvDYdXDzkhs-unsplash.fd9f7452af71250139f9.jpg",
     "static/media/men.jpg": "/FitLoc/static/media/men.9fa711764ddb76e86fb6.jpg",
@@ -15,11 +14,11 @@
     "static/media/run.jpg": "/FitLoc/static/media/run.a4ec21b997c9bb27b17a.jpg",
     "static/media/anastase-maragos-FP7cfYPPUKM-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-FP7cfYPPUKM-unsplash.cc301a83ecea6ddf06b4.jpg",
     "index.html": "/FitLoc/index.html",
-    "main.a39e2c20.css.map": "/FitLoc/static/css/main.a39e2c20.css.map",
-    "main.dbd1a23c.js.map": "/FitLoc/static/js/main.dbd1a23c.js.map"
+    "main.9268e6b1.css.map": "/FitLoc/static/css/main.9268e6b1.css.map",
+    "main.ea995269.js.map": "/FitLoc/static/js/main.ea995269.js.map"
   },
   "entrypoints": [
-    "static/css/main.a39e2c20.css",
-    "static/js/main.dbd1a23c.js"
+    "static/css/main.9268e6b1.css",
+    "static/js/main.ea995269.js"
   ]
 }
