@@ -1,24 +1,44 @@
 {
   "files": {
-    "main.css": "/FitLoc/static/css/main.9268e6b1.css",
-    "main.js": "/FitLoc/static/js/main.ea995269.js",
+    "main.css": "/FitLoc/static/css/main.5cfb8341.css",
+    "main.js": "/FitLoc/static/js/main.550e50b4.js",
     "static/media/error.jpg": "/FitLoc/static/media/error.4cced44502c85d8ed35e.jpg",
+    "static/media/accessories_.jpg": "/FitLoc/static/media/accessories_.ee32d22fcc4ae4eae9af.jpg",
+    "static/media/people12.jpg": "/FitLoc/static/media/people12.846bfb717a7616f99ccd.jpg",
     "static/media/women.jpg": "/FitLoc/static/media/women.294435737a01e6dc51dd.jpg",
+    "static/media/men_.jpg": "/FitLoc/static/media/men_.13f8ecbfda149ba22f6a.jpg",
     "static/media/victor-freitas-WvDYdXDzkhs-unsplash.jpg": "/FitLoc/static/media/victor-freitas-WvDYdXDzkhs-unsplash.fd9f7452af71250139f9.jpg",
     "static/media/men.jpg": "/FitLoc/static/media/men.9fa711764ddb76e86fb6.jpg",
+    "static/media/people13.jpg": "/FitLoc/static/media/people13.2ff4607398d7599dce91.jpg",
     "static/media/anastase-maragos-HyvE5SiKMUs-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-HyvE5SiKMUs-unsplash.08937771466e9dfb5914.jpg",
+    "static/media/people9.jpg": "/FitLoc/static/media/people9.1f2c5e0db6e0f7704a23.jpg",
     "static/media/dumbells.jpg": "/FitLoc/static/media/dumbells.eb98fc43cd1fb6f87b7e.jpg",
+    "static/media/people5.jpg": "/FitLoc/static/media/people5.227f7bcea3bb83af9ed0.jpg",
     "static/media/group.jpg": "/FitLoc/static/media/group.3a48ef8bdd6d10de9fa6.jpg",
     "static/media/mor-shani-li4dxZ0KYRw-unsplash.jpg": "/FitLoc/static/media/mor-shani-li4dxZ0KYRw-unsplash.ce645a48a19cae4e609d.jpg",
+    "static/media/people16.jpg": "/FitLoc/static/media/people16.569f0bc5912ff489c591.jpg",
+    "static/media/women_.jpg": "/FitLoc/static/media/women_.8f42c7aee9b042906002.jpg",
+    "static/media/people10.jpg": "/FitLoc/static/media/people10.e04eed277a2330a2ba7d.jpg",
     "static/media/contact.jpg": "/FitLoc/static/media/contact.1287ccea2734d740744a.jpg",
+    "static/media/people11.jpg": "/FitLoc/static/media/people11.13f52a8e3f0be92b01a2.jpg",
+    "static/media/people6.jpg": "/FitLoc/static/media/people6.581d233fdfb5f429f59d.jpg",
+    "static/media/people1.jpg": "/FitLoc/static/media/people1.990bf8344d8845fea242.jpg",
+    "static/media/people3.jpg": "/FitLoc/static/media/people3.4ff797231c53dab7193b.jpg",
     "static/media/run.jpg": "/FitLoc/static/media/run.a4ec21b997c9bb27b17a.jpg",
+    "static/media/people4.jpg": "/FitLoc/static/media/people4.c273ba3dba30c5357137.jpg",
     "static/media/anastase-maragos-FP7cfYPPUKM-unsplash.jpg": "/FitLoc/static/media/anastase-maragos-FP7cfYPPUKM-unsplash.cc301a83ecea6ddf06b4.jpg",
+    "static/media/people7.jpg": "/FitLoc/static/media/people7.e95e1d95c61f7cdb035e.jpg",
+    "static/media/run_.jpg": "/FitLoc/static/media/run_.3eb4623e13449c8d931b.jpg",
+    "static/media/people8.jpg": "/FitLoc/static/media/people8.2e7348643f91ecec1c2b.jpg",
+    "static/media/people2.jpg": "/FitLoc/static/media/people2.a8d8bb9cba24962ea2f0.jpg",
+    "static/media/people15.jpg": "/FitLoc/static/media/people15.f10311d032f3347569d4.jpg",
+    "static/media/people14.jpg": "/FitLoc/static/media/people14.814f17f700b281e33acc.jpg",
     "index.html": "/FitLoc/index.html",
-    "main.9268e6b1.css.map": "/FitLoc/static/css/main.9268e6b1.css.map",
-    "main.ea995269.js.map": "/FitLoc/static/js/main.ea995269.js.map"
+    "main.5cfb8341.css.map": "/FitLoc/static/css/main.5cfb8341.css.map",
+    "main.550e50b4.js.map": "/FitLoc/static/js/main.550e50b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9268e6b1.css",
-    "static/js/main.ea995269.js"
+    "static/css/main.5cfb8341.css",
+    "static/js/main.550e50b4.js"
   ]
 }
