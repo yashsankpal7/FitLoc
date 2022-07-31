@@ -5,19 +5,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Tabss from './Tabs_';
 
-const Styles = styled.div`
-  .navbar {
-    background-color: #222;
-  }
 
-  a, .navbar-brand, .navbar-nav .nav-link {
-    color: #bbb;
-    
-    &:hover {
-      color: white;
-    }
-  }
-  `;
 
 const NavigationBar = () =>{
 
@@ -26,7 +14,7 @@ const NavigationBar = () =>{
     <>
     <Navbar  collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
       <Container fluid> 
-        <Button
+        {/* <Button
           onClick={() => setOpen(!open)}
           aria-controls="example-fade-text"
           aria-expanded={open}
@@ -34,7 +22,7 @@ const NavigationBar = () =>{
           type="button"
           >
           <span className="navbar-toggler-icon"/>
-        </Button>
+        </Button> */}
         <Navbar.Brand href="/home" className="ms-1 fs-5">FitLoc</Navbar.Brand>
         <Navbar.Toggle aria-controls="justify-content-end"/>
         <Navbar.Collapse className="justify-content-end">
@@ -78,7 +66,7 @@ const NavigationBar = () =>{
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <Tabss open={open}/>
+    {/* <Tabss open={open}/> */}
     </>
 )
 } 

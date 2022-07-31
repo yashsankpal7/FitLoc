@@ -2,6 +2,9 @@ import React from 'react'
 import { Container, Stack, Carousel, Image, Card, ButtonGroup ,Button,Row,Col} from 'react-bootstrap';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+
+
 const Home = () => {
 
   const navigate = useNavigate();
@@ -36,13 +39,13 @@ const Carousel_ = ()=>{
           />
           <Carousel.Caption>
             <Container className="position-relative" style={{height:'20rem'}}>
-              <h1 className="position-absolute top-0 start-0 text-success">
+              <div className="position-absolute top-0 start-0 text-success display-4 fw-bold">
                 The clock is <span className="text-light">ticking</span>. 
-              </h1>
-              <h1 className="position-absolute top-0 start-0 mt-5 text-success">
+              </div>
+              <div className="position-absolute top-0 start-0 mt-5 text-success display-5 h1">
 
               Are you becoming the <span className="text-light">person</span> you want to be <span className="text-light">?</span>
-              </h1>
+              </div>
             </Container>
           </Carousel.Caption>
         </Carousel.Item>
@@ -55,12 +58,12 @@ const Carousel_ = ()=>{
           />
           <Carousel.Caption>
             <Container className="position-relative" style={{height:'20rem'}}>
-                <h1 className="position-absolute top-0 start-0 text-success">
-                  The clock is <span className="text-light">ticking</span>. 
-                </h1>
-                <h1 className="position-absolute top-0 start-0 mt-5 text-success">
-                  Are you becoming the <span className="text-light">person</span> you want to be <span className="text-light">?</span>
-                </h1>
+                <div className="position-absolute top-0 start-0 text-light display-4 fw-bold">
+                  All progress takes place 
+                </div>
+                <div className="position-absolute top-0 start-0 mt-5 display-6">
+                  outside the comfort zone.
+                </div>
               </Container>
           </Carousel.Caption>
         </Carousel.Item>
@@ -73,13 +76,12 @@ const Carousel_ = ()=>{
           />
           <Carousel.Caption>
           <Container className="position-relative" style={{height:'20rem'}}>
-              <h1 className="position-absolute top-0 start-0 text-success">
-                The clock is <span className="text-light">ticking</span>. 
-              </h1>
-              <h1 className="position-absolute top-0 start-0 mt-5 text-success">
-
-                Are you becoming the <span className="text-light">person</span> you want to be?
-              </h1>
+              <div className="position-absolute top-0 start-0 display-6 fw-bold">
+                If you think lifting is dangerous, try being weak. 
+              </div>
+              <div className="position-absolute top-0 start-0 mt-5 display-6">
+                Being weak is dangerous.
+              </div>
             </Container>
           </Carousel.Caption>
         </Carousel.Item>
@@ -92,13 +94,12 @@ const Carousel_ = ()=>{
           />
           <Carousel.Caption>
           <Container className="position-relative" style={{height:'20rem'}}>
-              <h1 className="position-absolute top-0 start-0 text-success">
-                The clock is <span className="text-light">ticking</span>. 
-              </h1>
-              <h1 className="position-absolute top-0 start-0 mt-5 text-success">
-
-                Are you becoming the <span className="text-light">person</span> you want to be?
-              </h1>
+              <div className="position-absolute top-0 start-0 display-5 fw-bold">
+                The successful warrior is the average man 
+              </div>
+              <div className="position-absolute top-0 start-0 mt-5 display-6">
+                with laser-like focus.
+              </div>
             </Container>
           </Carousel.Caption>
         </Carousel.Item>
@@ -112,7 +113,7 @@ const Trends = ({navigate})=>{
     <>
       <Container className="pt-5 pb-5" fluid>
         <div className="position-relative">
-          <h3 className="p-2">Trends for You</h3>
+          <h3 className="p-2 fst-italic">Trends for You</h3>
         </div>
         <Stack direction="horizontal">
           <Row className="g-4" xs={1} md={4}>
@@ -120,7 +121,7 @@ const Trends = ({navigate})=>{
           <Card bg='dark' text='white'>
             <Card.Img variant="top" src={require('../assets/run.jpg')} style={{height:'18rem'}} />
             <Card.ImgOverlay>
-              <Card.Title>Run</Card.Title>
+              <Card.Title className="fst-italic">Run</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
               <Button variant="dark" onClick={()=>navigate("/products/run")} className="text-white">
@@ -133,7 +134,7 @@ const Trends = ({navigate})=>{
           <Card bg='dark' text='white'>
             <Card.Img variant="top" src={require('../assets/men.jpg')} style={{height:'18rem'}} />
             <Card.ImgOverlay>
-              <Card.Title>Men</Card.Title>
+              <Card.Title className="fst-italic">Men</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
               <Button variant="dark" onClick={()=>navigate("/products/men")} className="text-white">
@@ -146,7 +147,7 @@ const Trends = ({navigate})=>{
           <Card bg='dark' text='white'>
             <Card.Img variant="top" src={require('../assets/women.jpg')} style={{height:'18rem'}} />
             <Card.ImgOverlay>
-              <Card.Title>Women</Card.Title>
+              <Card.Title className="fst-italic">Women</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
               <Button variant="dark" onClick={()=>navigate("/products/women")} className="text-white">
@@ -159,7 +160,7 @@ const Trends = ({navigate})=>{
           <Card bg='dark' text='white' >
             <Card.Img variant="top" src={require('../assets/dumbells.jpg')} style={{height:'18rem'}} />
             <Card.ImgOverlay>
-              <Card.Title>Accessories</Card.Title>
+              <Card.Title className="fst-italic">Accessories</Card.Title>
             </Card.ImgOverlay>
             <Card.Body as={ButtonGroup}>
               <Button variant="dark" onClick={()=>navigate("/products/accessories")} className="text-white">

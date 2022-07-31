@@ -1,10 +1,11 @@
 import React from 'react'
 import { Collapse, Container, Tabs, Tab, Row , Col} from 'react-bootstrap';
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom'
 
 const Tabss = ({open}) => {
   const [key, setKey] = useState('All Sports');
-
+  const navigate = useNavigate()
   return (
     <>
     <Collapse in={open}>
@@ -18,10 +19,10 @@ const Tabss = ({open}) => {
           <Tab eventKey="All Sports" title="All Sports" className="text-white p-2" tabClassName="btn-dark mt-1 text-white me-2">
             <Tab.Container transition>
               <Row>
-                <Men/>
+                <Men navigate={navigate}/>
               </Row>
               <Row>
-                <Women/>
+                <Women navigate={navigate}/>
               </Row>
             </Tab.Container>
           </Tab>
@@ -30,7 +31,8 @@ const Tabss = ({open}) => {
               <Row>
                 <Men/>               
               </Row>
-            </Tab.Container>          </Tab>
+            </Tab.Container>          
+          </Tab>
           <Tab eventKey="Women" title="Women" className="text-white p-2" tabClassName="btn-dark mt-1 text-white me-2">
             <Tab.Container transition>
               <Row>
@@ -57,6 +59,8 @@ export default Tabss
 
 
 const Men = () =>{
+
+
   return(
     <>
       <Col>
@@ -157,7 +161,7 @@ const Men = () =>{
 const Women = () =>{
   return(
     <>
-            <Col>
+      <Col>
         <Row>
           <h4>
             Women's Footwear
@@ -206,48 +210,6 @@ const Women = () =>{
           </h7>
         </Row>
       </Col>  
-      <Col>
-        <Row>
-          <h4>
-            Under 999 store
-          </h4> 
-        </Row>
-        <Row>
-          <h7>
-            Shoes
-          </h7>
-        </Row>
-        <Row>
-          <h7>
-            T-Shirts
-          </h7>
-        </Row>
-        <Row>
-          <h7>
-            Shorts
-          </h7>
-        </Row>
-        <Row>
-          <h7>
-            Trackpants
-          </h7>
-        </Row>
-        <Row>
-          <h7>
-            Activewear
-          </h7>
-        </Row>
-        <Row>
-          <h7>
-            Jackets
-          </h7>
-        </Row>
-        <Row>
-          <h7>
-            Sunglasses
-          </h7>
-        </Row>
-      </Col> 
     </>
   )
 }

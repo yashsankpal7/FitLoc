@@ -1,1 +1,1 @@
-(https://yashsankpal7.github.io/FitLoc/)
+https://yashsankpal7.github.io/FitLoc/

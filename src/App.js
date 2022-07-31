@@ -22,7 +22,7 @@ const App = ()=>{
           <Route path="/contact"  element={<Contact/>} />
           <Route path="/login"  element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
-          <Route path="/products/:type" element={<Products/>}/>
+          <Route path="/products/:typeValue" element={<Products/>}/>
           <Route path="*" element={<NoMatch/>} />
         </Routes>
       </Layout>

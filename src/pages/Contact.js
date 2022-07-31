@@ -1,5 +1,8 @@
 import React from 'react'
-import { Image, Row, Col, Container, Card, Carousel, Form ,Button} from 'react-bootstrap';
+import {  Row, Col, Container, Card, Carousel, Form ,Button} from 'react-bootstrap';
+
+
+
 
 const Contact = () => {
 
@@ -58,50 +61,4 @@ const Contact = () => {
 }
 
 export default Contact
-//Jumbotron
-//
 
-          // {/* <Container>
-          //   <Row>
-          //     <Col className="col-10 bg-secondary py-3 px-2" md="auto">
-          //       <Row> 
-          //         <h3 className="text-dark">
-          //           Frequent Topics
-          //         </h3>
-          //       </Row> 
-          //       <Row xs={1} md={2} className="g-4">
-          //         <Card className="bg-dark text-white" style={{height:'5rem'}}>
-          //           <Card.Img src="holder.js/100px270" alt="Card image" />
-          //           <Card.ImgOverlay>
-          //             <Card.Title>Card title</Card.Title>
-          //           </Card.ImgOverlay>
-          //         </Card>
-          //         <Card className="bg-dark text-white" style={{height:'5rem'}}>
-          //           <Card.Img src="holder.js/100px270" alt="Card image" />
-          //           <Card.ImgOverlay>
-          //             <Card.Title>Card title</Card.Title>
-          //           </Card.ImgOverlay>
-          //         </Card>
-          //         <Card className="bg-dark text-white" style={{height:'5rem'}}>
-          //           <Card.Img src="holder.js/100px270" alt="Card image" />
-          //           <Card.ImgOverlay>
-          //             <Card.Title>Card title</Card.Title>
-          //           </Card.ImgOverlay>
-          //         </Card>
-          //         <Card className="bg-dark text-white" style={{height:'5rem'}}>
-          //           <Card.Img src="holder.js/100px270" alt="Card image" />
-          //           <Card.ImgOverlay>
-          //             <Card.Title>Card title</Card.Title>
-          //           </Card.ImgOverlay>
-          //         </Card>
-          //         <Card className="bg-dark text-white" style={{height:'5rem'}}>
-          //           <Card.Img src="holder.js/100px270" alt="Card image" />
-          //           <Card.ImgOverlay>
-          //             <Card.Title>Card title</Card.Title>
-          //           </Card.ImgOverlay>
-          //         </Card>                
-          //       </Row> 
-          //     </Col>
-          //     <Col className="bg-success" md="auto">&nbsp;</Col>
-          //   </Row>
-          // </Container> */}

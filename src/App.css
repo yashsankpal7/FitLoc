@@ -104,10 +104,10 @@ td{
   width: 40rem;
 }
 
-.Login{
 
-}
-
-.SignUp{
+.Product{
   
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size:100% 50rem;
 }
