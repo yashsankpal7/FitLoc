@@ -30,7 +30,8 @@ const Products = () => {
         return {
           productName:faker.commerce.productName(),
           description:faker.commerce.productDescription(),
-          price:faker.commerce.price()
+          price:faker.commerce.price(),
+          days:parseInt(Math.random()*20+1)
         }
       })
   
@@ -88,7 +89,7 @@ const Products = () => {
                     productData === 0 ?
                     <>
                       {
-                        Array.from({length:10}).map((_,idx)=>(
+                        Array.from({length:5}).map((_,idx)=>(
                           <Col>
                           <Card bg="dark" text="light">
                             <Card.Body>
@@ -100,7 +101,9 @@ const Products = () => {
                               <Placeholder xs={6} /> <Placeholder xs={8} />
                             </Placeholder>
                             </Card.Body>
-                            <Card.Footer className="text-muted">{parseInt(Math.random()*20+1)} days ago</Card.Footer>
+                            <Card.Footer className="text-muted">
+                            <Placeholder xs={6} />  
+                            </Card.Footer>
                           </Card>
                         </Col>
                         ))
@@ -122,7 +125,7 @@ const Products = () => {
                                     {product.description}
                                   </Card.Text>
                                 </Card.Body>
-                                <Card.Footer className="text-muted">{parseInt(Math.random()*20+1)} days ago</Card.Footer>
+                                <Card.Footer className="text-muted">{product.days} days ago</Card.Footer>
                               </Card>
                             </Col>
                           </>
