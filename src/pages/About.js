@@ -41,6 +41,29 @@ const Image_ = {
 }
 
 
+const text = {
+  0: "Fit is not a destination. It is a way of life.",
+  1: "Fitness is not about being better than someone else. It's about being better than you used to be.",
+  2: "Good things come to those who sweat.",
+  3: "If it doesn't challenge you, it doesn't change you Fred Davito",
+  4: "Wake up with determination. Go to bed with satisfaction.",
+  5: "When you feel like quitting, think about why you started.",
+  6: "Surround yourself around fitness minded people. Positivity can be so contagious.",
+  7:"There is no diet that will do what eating healthy does. Skip the diet. Just eat healthy today.",
+  8:"Imagine yourself six months from now. Don't stop it will work out.",
+  9:"Eat clean and exercise daily.",
+  10:"The smartest way to lose weight requires one percent inspiration and ninety nine percent perspiration Felicity Luckey",
+  11:"Motivation is what gets you started. Habit is what keeps you going.",
+  12:"Overeating is always a decision. Nobody forces your hand to pick up food and put it into your mouth.",
+  13:"Drinking freshly made juices and eating enough whole foods to provide adequate fibre is a sensible approach to a healthful diet Jay Kordich",
+  14:"To live good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness and maintain an interest in life William Londen",
+  15:"Food is like sex. When you abstain, even the worst stuff begins to look good- Beth McCollister",
+  16:"Tactics, fitness, stroke ability, adaptability, experience and sportsmanship are all necessary for winning Fred Perry",
+  17:"What's money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do Bob Dylan",
+  18:"There are only two requirements when it comes to exercise. One is that you do it. The other is that you continue to do it.",
+  19:"Those who do not make time for exercise will need to make time for illness."
+}
+
 
 const About = () => {
   const [show, setShow] = useState(false);
@@ -168,7 +191,7 @@ const Modal_ = ({show,onHide,firstName,lastName,description,image})=>{
               <Card.Body>
                 <Card.Title className="display-6"> {firstName} {lastName}</Card.Title>
                 <Card.Text className="mt-3">
-                  {description}
+                  {text[parseInt(Math.random()*20+1 )]}
                 </Card.Text>
               </Card.Body>
             </Col>
