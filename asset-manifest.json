@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FitLoc/static/css/main.5cfb8341.css",
-    "main.js": "/FitLoc/static/js/main.550e50b4.js",
+    "main.js": "/FitLoc/static/js/main.67be39e4.js",
     "static/media/error.jpg": "/FitLoc/static/media/error.4cced44502c85d8ed35e.jpg",
     "static/media/accessories_.jpg": "/FitLoc/static/media/accessories_.ee32d22fcc4ae4eae9af.jpg",
     "static/media/people12.jpg": "/FitLoc/static/media/people12.846bfb717a7616f99ccd.jpg",
@@ -35,10 +35,10 @@
     "static/media/people14.jpg": "/FitLoc/static/media/people14.814f17f700b281e33acc.jpg",
     "index.html": "/FitLoc/index.html",
     "main.5cfb8341.css.map": "/FitLoc/static/css/main.5cfb8341.css.map",
-    "main.550e50b4.js.map": "/FitLoc/static/js/main.550e50b4.js.map"
+    "main.67be39e4.js.map": "/FitLoc/static/js/main.67be39e4.js.map"
   },
   "entrypoints": [
     "static/css/main.5cfb8341.css",
-    "static/js/main.550e50b4.js"
+    "static/js/main.67be39e4.js"
   ]
 }
