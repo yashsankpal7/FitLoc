@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/FitLoc/static/css/main.5cfb8341.css",
+    "main.css": "/FitLoc/static/css/main.c7fa12ea.css",
     "main.js": "/FitLoc/static/js/main.6022d5b5.js",
+    "static/media/pexels-yan-krukov-8480546.gif": "/FitLoc/static/media/pexels-yan-krukov-8480546.7e5464c77a06462f9122.gif",
+    "static/media/pexels-rodnae-productions-7187517.gif": "/FitLoc/static/media/pexels-rodnae-productions-7187517.05c3c171944d74f5b014.gif",
     "static/media/error.jpg": "/FitLoc/static/media/error.4cced44502c85d8ed35e.jpg",
     "static/media/accessories_.jpg": "/FitLoc/static/media/accessories_.ee32d22fcc4ae4eae9af.jpg",
     "static/media/people12.jpg": "/FitLoc/static/media/people12.846bfb717a7616f99ccd.jpg",
@@ -14,12 +16,10 @@
     "static/media/people9.jpg": "/FitLoc/static/media/people9.1f2c5e0db6e0f7704a23.jpg",
     "static/media/dumbells.jpg": "/FitLoc/static/media/dumbells.eb98fc43cd1fb6f87b7e.jpg",
     "static/media/people5.jpg": "/FitLoc/static/media/people5.227f7bcea3bb83af9ed0.jpg",
-    "static/media/group.jpg": "/FitLoc/static/media/group.3a48ef8bdd6d10de9fa6.jpg",
     "static/media/mor-shani-li4dxZ0KYRw-unsplash.jpg": "/FitLoc/static/media/mor-shani-li4dxZ0KYRw-unsplash.ce645a48a19cae4e609d.jpg",
     "static/media/people16.jpg": "/FitLoc/static/media/people16.569f0bc5912ff489c591.jpg",
     "static/media/women_.jpg": "/FitLoc/static/media/women_.8f42c7aee9b042906002.jpg",
     "static/media/people10.jpg": "/FitLoc/static/media/people10.e04eed277a2330a2ba7d.jpg",
-    "static/media/contact.jpg": "/FitLoc/static/media/contact.1287ccea2734d740744a.jpg",
     "static/media/people11.jpg": "/FitLoc/static/media/people11.13f52a8e3f0be92b01a2.jpg",
     "static/media/people6.jpg": "/FitLoc/static/media/people6.581d233fdfb5f429f59d.jpg",
     "static/media/people1.jpg": "/FitLoc/static/media/people1.990bf8344d8845fea242.jpg",
@@ -34,11 +34,11 @@
     "static/media/people15.jpg": "/FitLoc/static/media/people15.f10311d032f3347569d4.jpg",
     "static/media/people14.jpg": "/FitLoc/static/media/people14.814f17f700b281e33acc.jpg",
     "index.html": "/FitLoc/index.html",
-    "main.5cfb8341.css.map": "/FitLoc/static/css/main.5cfb8341.css.map",
+    "main.c7fa12ea.css.map": "/FitLoc/static/css/main.c7fa12ea.css.map",
     "main.6022d5b5.js.map": "/FitLoc/static/js/main.6022d5b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cfb8341.css",
+    "static/css/main.c7fa12ea.css",
     "static/js/main.6022d5b5.js"
   ]
 }
